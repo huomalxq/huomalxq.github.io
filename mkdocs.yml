@@ -1,0 +1,33 @@
+site_name: Huoma LXQ
+site_description: 个人主页与学习记录
+site_url: https://huomalxq.github.io/
+repo_url: https://github.com/huomalxq/huomalxq.github.io
+theme:
+  name: material
+  language: zh
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+extra_css:
+  - assets/stylesheets/extra.css
+nav:
+  - 首页: index.md
+  - 个人简历:
+      - 简历总览: resume/index.md
+  - 学习记录:
+      - 学习总览: study/index.md
+      - AI / Agent:
+          - 分类说明: study/ai/index.md
+          - MkDocs 站点搭建: study/ai/mkdocs-site-setup.md
+      - 工程实践:
+          - 分类说明: study/engineering/index.md
+          - 学习记录模板: study/engineering/note-template.md
+

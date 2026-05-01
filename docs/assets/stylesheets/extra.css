@@ -1,0 +1,300 @@
+:root {
+  --site-bg: #f7f4ec;
+  --site-surface: rgba(255, 252, 245, 0.9);
+  --site-surface-strong: #fffdf8;
+  --site-ink: #18363f;
+  --site-muted: #5f6d73;
+  --site-line: rgba(24, 54, 63, 0.14);
+  --site-accent: #0d7a6f;
+  --site-accent-strong: #095a52;
+  --site-accent-soft: #d9f1eb;
+  --site-warm: #f0bb58;
+  --site-shadow: 0 20px 50px rgba(24, 54, 63, 0.08);
+}
+
+body {
+  font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background:
+    radial-gradient(circle at top left, rgba(240, 187, 88, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(13, 122, 111, 0.16), transparent 24%),
+    linear-gradient(180deg, #fffdf7 0%, var(--site-bg) 100%);
+  color: var(--site-ink);
+}
+
+.md-header,
+.md-tabs {
+  background: rgba(255, 253, 248, 0.88);
+  backdrop-filter: blur(18px);
+}
+
+.md-typeset,
+.md-nav,
+.md-header__title,
+.md-tabs__link {
+  color: var(--site-ink);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: "Noto Serif SC", "Songti SC", "STSong", serif;
+  letter-spacing: 0.02em;
+  color: var(--site-ink);
+}
+
+.md-typeset h1 {
+  margin-bottom: 1rem;
+}
+
+.home-hero,
+.resume-frame,
+.feature-card,
+.study-card {
+  box-shadow: var(--site-shadow);
+}
+
+.home-hero {
+  padding: 3rem;
+  border: 1px solid var(--site-line);
+  border-radius: 28px;
+  background:
+    linear-gradient(135deg, rgba(255, 253, 248, 0.94), rgba(217, 241, 235, 0.78)),
+    var(--site-surface);
+}
+
+.hero-eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--site-accent);
+}
+
+.hero-lead {
+  max-width: 42rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
+  color: var(--site-muted);
+}
+
+.home-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin: 1.5rem 0 0;
+}
+
+.md-typeset .home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.md-typeset .home-button:hover {
+  transform: translateY(-2px);
+}
+
+.md-typeset .home-button--primary {
+  color: #fff;
+  background: linear-gradient(135deg, var(--site-accent), var(--site-accent-strong));
+  box-shadow: 0 14px 30px rgba(13, 122, 111, 0.24);
+}
+
+.md-typeset .home-button--secondary {
+  color: var(--site-ink);
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--site-line);
+}
+
+.feature-grid,
+.study-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.feature-card,
+.study-card {
+  display: block;
+  padding: 1.4rem;
+  border: 1px solid var(--site-line);
+  border-radius: 22px;
+  background: var(--site-surface);
+}
+
+.study-card {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.18s ease, border-color 0.18s ease;
+}
+
+.study-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(13, 122, 111, 0.36);
+}
+
+.feature-label,
+.study-card__label {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--site-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.study-card strong {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 1.05rem;
+}
+
+.study-card span:last-child,
+.feature-card p:last-child {
+  color: var(--site-muted);
+}
+
+.resume-sheet {
+  padding: 2rem;
+  border: 1px solid var(--site-line);
+  border-radius: 28px;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.96), rgba(255, 255, 255, 0.9)),
+    var(--site-surface);
+  box-shadow: var(--site-shadow);
+}
+
+.resume-header {
+  padding-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
+  border-bottom: 1px solid var(--site-line);
+}
+
+.resume-kicker {
+  margin: 0 0 0.6rem;
+  color: var(--site-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.resume-contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+.resume-contact a {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--site-line);
+  border-radius: 999px;
+  color: var(--site-ink);
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.resume-section + .resume-section {
+  margin-top: 2rem;
+}
+
+.resume-item + .resume-item,
+.resume-card + .resume-card {
+  margin-top: 1rem;
+}
+
+.resume-item__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  align-items: baseline;
+}
+
+.resume-item__head strong {
+  font-size: 1.02rem;
+}
+
+.resume-item__head span,
+.resume-award span {
+  color: var(--site-accent);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.resume-item p {
+  margin: 0.45rem 0 0;
+  color: var(--site-muted);
+}
+
+.resume-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.resume-skills span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid rgba(13, 122, 111, 0.22);
+  border-radius: 999px;
+  background: var(--site-accent-soft);
+  color: var(--site-accent-strong);
+  font-weight: 700;
+}
+
+.resume-card,
+.resume-award {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid var(--site-line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.resume-card ul {
+  margin: 0.8rem 0 0;
+}
+
+.resume-card li + li {
+  margin-top: 0.4rem;
+}
+
+.resume-awards {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.resume-award strong {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.resume-award p {
+  margin: 0.35rem 0 0;
+  color: var(--site-muted);
+}
+
+@media (max-width: 900px) {
+  .home-hero {
+    padding: 2rem 1.4rem;
+  }
+
+  .resume-sheet {
+    padding: 1.3rem;
+  }
+
+  .resume-item__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

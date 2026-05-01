@@ -1,0 +1,6 @@
+site/
+.venv/
+.vendor/
+.tmp/
+.deps/
+__pycache__/
