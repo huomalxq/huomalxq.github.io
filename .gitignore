@@ -1,4 +1,5 @@
 site/
+.mkdocs-out/
 .venv/
 .vendor/
 .tmp/

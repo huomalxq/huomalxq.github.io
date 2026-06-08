@@ -6,7 +6,7 @@ title: 学习记录
   <div class="study-hero__copy">
     <p class="section-kicker">MKDOCS KNOWLEDGE BASE</p>
     <h1>学习记录</h1>
-    <p>这里记录学习过程、实验判断和工程复盘，不只保留结论。结构上保持“分类页负责导航，单页负责解决一个问题”。</p>
+    <p>这里记录模型实验、Agent 工作流、工程排障和站点维护过程。每篇笔记尽量保留问题背景、尝试路径和最终判断，而不只是贴一个结论。</p>
     <div class="hero-pill-row">
       <span class="hero-pill">面向长期更新</span>
       <span class="hero-pill">按主题分类</span>
@@ -19,8 +19,8 @@ title: 学习记录
 
   <article class="study-hero__card">
     <span class="hero-panel__eyebrow">Current Focus</span>
-    <strong>AI / Agent 与工程实践</strong>
-    <p>当前内容先围绕大模型、智能体、站点搭建与工程模板展开，后续再扩展更多专题。</p>
+    <strong>从实验到可复盘笔记</strong>
+    <p>优先沉淀 LLM 训练 / 推理、Agent 编排、RAG 检索和部署排障中值得复用的判断。</p>
   </article>
 </section>
 
@@ -28,14 +28,14 @@ title: 学习记录
   <a class="study-card" href="ai/">
     <span class="study-card__label">AI / Agent</span>
     <strong>AI 与智能体</strong>
-    <span>记录模型、Agent、工具链和实验过程。</span>
-    <em class="study-card__meta">当前已有分类说明与站点搭建笔记</em>
+    <span>记录模型训练、推理加速、Agent 工作流、RAG 检索和评测实验。</span>
+    <em class="study-card__meta">后续重点补充推测解码、LoRA SFT 与 Text2SQL Agent</em>
   </a>
   <a class="study-card" href="engineering/">
     <span class="study-card__label">Engineering</span>
     <strong>工程实践</strong>
-    <span>记录项目搭建、调试经验和可复用模板。</span>
-    <em class="study-card__meta">当前已有分类说明与学习记录模板</em>
+    <span>记录项目搭建、环境配置、部署链路、调试经验和可复用模板。</span>
+    <em class="study-card__meta">当前已有站点搭建记录与学习记录模板</em>
   </a>
 </section>
 
@@ -45,17 +45,17 @@ title: 学习记录
     <h2>最近更新</h2>
     <div class="feed-list">
       <article class="feed-item">
-        <time datetime="2026-05-01">2026.05.01</time>
+        <time datetime="2026-06-08">2026.06.08</time>
         <div>
-          <strong>新建个人主页与学习记录站点骨架</strong>
-          <p>完成 GitHub Pages、MkDocs 配置与首页入口设计。</p>
+          <strong>同步新版简历与主页定位</strong>
+          <p>将首页重点更新为 LLM 推理优化、Agent 工作流和模型微调对齐方向。</p>
         </div>
       </article>
       <article class="feed-item">
         <time datetime="2026-05-01">2026.05.01</time>
         <div>
-          <strong>补充 AI / Agent 分类说明与第一篇搭建笔记</strong>
-          <p>为后续扩展模型、Agent 和实验记录留出清晰入口。</p>
+          <strong>搭建个人主页与学习记录站点骨架</strong>
+          <p>完成 GitHub Pages、MkDocs 配置、首页入口设计和学习记录分类。</p>
         </div>
       </article>
       <article class="feed-item">
@@ -74,15 +74,15 @@ title: 学习记录
     <div class="principle-grid">
       <article class="principle-card">
         <strong>单页单问题</strong>
-        <p>一篇笔记尽量围绕一个核心问题，避免主题混杂。</p>
+        <p>一篇笔记围绕一个核心问题展开，优先写清输入、约束、尝试和判断。</p>
       </article>
       <article class="principle-card">
         <strong>分类页做导航</strong>
-        <p>分类页负责组织内容，细节和结论放进独立子页面。</p>
+        <p>分类页负责组织主题，具体命令、实验表格和结论放进独立子页面。</p>
       </article>
       <article class="principle-card">
         <strong>标题要可搜索</strong>
-        <p>优先写清对象与动作，方便全文检索和 Git 历史回溯。</p>
+        <p>标题写清对象、动作和场景，方便全文检索，也方便从 Git 历史里回溯变化。</p>
       </article>
     </div>
   </div>
