@@ -161,6 +161,7 @@ body::after {
 
 .md-header__source {
   max-width: none;
+  margin-left: auto;
 }
 
 .md-source__repository {
@@ -182,6 +183,16 @@ body::after {
   border-radius: 999px;
   background: rgba(13, 122, 111, 0.1);
   color: var(--site-accent-strong);
+}
+
+[data-md-toggle="search"],
+.md-search,
+.md-search__overlay,
+.md-search__inner,
+.md-search__scrollwrap,
+.md-search-result,
+.md-header__option {
+  display: none !important;
 }
 
 .md-tabs__link {
@@ -487,8 +498,9 @@ body::after {
 
 .hero-signal b {
   display: block;
-  font-size: 1.15rem;
+  font-size: clamp(0.98rem, 1.7vw, 1.15rem);
   color: var(--site-accent-strong);
+  overflow-wrap: anywhere;
 }
 
 .hero-signal span {
@@ -735,6 +747,48 @@ body::after {
   grid-template-columns: minmax(16rem, 0.82fr) minmax(0, 1.18fr);
 }
 
+.resume-metric-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 0.9rem;
+  margin: -0.4rem 0 1.2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.resume-metric {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--site-line);
+  border-radius: var(--site-radius-md);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: var(--site-shadow-soft);
+}
+
+.resume-metric span {
+  display: block;
+  color: var(--site-muted);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resume-metric strong {
+  display: block;
+  margin-top: 0.34rem;
+  color: var(--site-accent-strong);
+  font-size: clamp(1.2rem, 2vw, 1.65rem);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.resume-metric p {
+  margin: 0.55rem 0 0;
+  color: var(--site-muted);
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
 .resume-sidecard,
 .resume-sectioncard {
   padding: 1.25rem;
@@ -829,6 +883,17 @@ body::after {
   color: var(--site-muted);
 }
 
+.resume-tech {
+  margin: 0.65rem 0 0;
+  padding: 0.55rem 0.7rem;
+  border-radius: 12px;
+  background: rgba(13, 122, 111, 0.08);
+  color: var(--site-accent-strong);
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
 .resume-card,
 .resume-award {
   padding: 1rem 1.05rem;
@@ -879,7 +944,8 @@ body::after {
   .study-hero,
   .study-columns,
   .resume-layout,
-  .home-note {
+  .home-note,
+  .resume-metric-grid {
     grid-template-columns: 1fr;
   }
 

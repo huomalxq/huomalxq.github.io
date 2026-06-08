@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="个人主页与学习记录">
+        <meta name="description" content="林祥庆的个人主页、AI 简历与学习记录">
       
       
       
@@ -688,13 +688,14 @@
     <div class="resume-top__copy">
       <p class="resume-kicker">CURRICULUM VITAE</p>
       <h1>林祥庆</h1>
-      <p class="resume-tagline">围绕 LLM 推理优化、AIGC 应用开发与智能系统实现展开学习和实践。</p>
+      <p class="resume-tagline">计算机科学与技术硕士在读，关注 LLM 推理加速、Agent 工作流、RAG / Text2SQL 与模型微调对齐。</p>
       <div class="resume-badge-row">
-        <span>LLM 推理优化</span>
-        <span>RAG 应用</span>
-        <span>全栈原型开发</span>
+        <span>Speculative Decoding</span>
+        <span>LangGraph / RAG</span>
+        <span>LoRA SFT & Preference Alignment</span>
       </div>
       <div class="home-actions home-actions--compact">
+        <a class="home-button home-button--primary" href="../assets/files/resume.pdf" target="_blank" rel="noopener">下载 PDF 简历</a>
         <a class="home-button home-button--tertiary" href="https://github.com/huomalxq/huomalxq.github.io" target="_blank" rel="noopener">返回 GitHub 仓库</a>
       </div>
     </div>
@@ -704,14 +705,32 @@
     </div>
   </header>
 
+  <div class="resume-metric-grid">
+    <article class="resume-metric">
+      <span>Inference Speedup</span>
+      <strong>1.41-3.31x</strong>
+      <p>不同模型设置下的端到端推理加速，同时保持输出质量稳定。</p>
+    </article>
+    <article class="resume-metric">
+      <span>Table Recall</span>
+      <strong>61.4% -> 81.6%</strong>
+      <p>通过补充表字段、业务样例与指标口径描述提升 RAG 表结构召回。</p>
+    </article>
+    <article class="resume-metric">
+      <span>Response Time</span>
+      <strong>50s -> 30s</strong>
+      <p>定位主要耗时节点后调整工作流编排和代码执行流程。</p>
+    </article>
+  </div>
+
   <div class="resume-layout">
     <aside class="resume-rail">
       <article class="resume-sidecard">
         <p class="resume-sidecard__label">当前关注</p>
         <ul class="resume-mini-list">
-          <li>大小模型协同推理与 Speculative Decoding</li>
-          <li>LLM + RAG 的场景化应用设计</li>
-          <li>从前端到部署的完整原型落地</li>
+          <li>长草稿推测解码、软拒绝机制与 KV Cache 复用</li>
+          <li>LangGraph 编排 RAG、Text2SQL、SQL 校验与结果解释</li>
+          <li>多模型 LoRA SFT、DPO / GRPO 偏好对齐实验流程</li>
         </ul>
       </article>
 
@@ -719,25 +738,36 @@
         <p class="resume-sidecard__label">技术栈</p>
         <div class="resume-skill-groups">
           <div class="resume-skill-group">
-            <strong>语言与模型</strong>
+            <strong>LLM / 训练</strong>
+            <div class="resume-skills">
+              <span>PyTorch</span>
+              <span>Transformers</span>
+              <span>LLaMA-Factory</span>
+              <span>TRL</span>
+              <span>PEFT</span>
+              <span>LoRA</span>
+              <span>DPO</span>
+              <span>GRPO</span>
+            </div>
+          </div>
+          <div class="resume-skill-group">
+            <strong>Agent / RAG</strong>
+            <div class="resume-skills">
+              <span>LangChain</span>
+              <span>LangGraph</span>
+              <span>RAG</span>
+              <span>Text2SQL</span>
+              <span>vLLM</span>
+              <span>Ollama</span>
+            </div>
+          </div>
+          <div class="resume-skill-group">
+            <strong>开发与部署</strong>
             <div class="resume-skills">
               <span>Python</span>
-              <span>C++</span>
-              <span>PyTorch</span>
-              <span>Keras</span>
-            </div>
-          </div>
-          <div class="resume-skill-group">
-            <strong>应用开发</strong>
-            <div class="resume-skills">
-              <span>Vue3</span>
-              <span>Flask</span>
               <span>FastAPI</span>
-            </div>
-          </div>
-          <div class="resume-skill-group">
-            <strong>工程工具</strong>
-            <div class="resume-skills">
+              <span>Flask</span>
+              <span>Vue3</span>
               <span>Docker</span>
               <span>MySQL</span>
               <span>Nginx</span>
@@ -752,12 +782,16 @@
           <article class="resume-award">
             <strong>第二届开放原子大赛 Teco-RAG 大模型开发任务挑战赛三等奖</strong>
             <span>2025.04</span>
-            <p>奖金 2 万元</p>
+            <p>独立完成，奖金 2 万元</p>
           </article>
           <article class="resume-award">
             <strong>第二届开放原子大赛 Tecorigin 算子开发任务挑战赛优秀奖</strong>
             <span>2025.04</span>
-            <p>奖金 5 千元</p>
+            <p>独立完成，奖金 5 千元</p>
+          </article>
+          <article class="resume-award">
+            <strong>第十四届中国大学生服务外包创新创业大赛国家三等奖</strong>
+            <span>2023.07</span>
           </article>
           <article class="resume-award">
             <strong>2023 年华为智能基座奖学金</strong>
@@ -779,7 +813,7 @@
 
         <article class="resume-item">
           <div class="resume-item__head">
-            <strong>苏州大学 · 计算机科学与技术学院</strong>
+            <strong>苏州大学（211） · 计算机科学与技术学院</strong>
             <span>2024.09 - 2027.06</span>
           </div>
           <p>硕士研究生（推免） · 计算机科学与技术（学硕） · 导师：贾俊铖</p>
@@ -795,50 +829,32 @@
       </section>
 
       <section class="resume-sectioncard">
-        <p class="section-kicker">Projects & Research</p>
+        <p class="section-kicker">Research & Projects</p>
         <h2>项目 / 科研经历</h2>
 
         <article class="resume-card">
           <div class="resume-item__head">
-            <strong>LLM 模型推理加速（大小模型协同、解码优化）</strong>
-            <span>2025 - 2026</span>
+            <strong>LLM 模型推理加速（推测解码优化）</strong>
+            <span>2025.04 - 至今</span>
           </div>
+          <p class="resume-tech">PyTorch · Transformers · Speculative Decoding · KV Cache</p>
           <ul>
-            <li>围绕大小模型协同推理与 Speculative Decoding 优化开展研究，参与方案设计、实验验证与论文撰写，相关研究论文在投。</li>
-            <li>聚焦现有推测解码方法在效率与稳定性上的改进空间，持续跟进相关方法并开展复现与对比实验。</li>
+            <li>针对长草稿推测解码中无效计算较多、加速收益不稳定的问题，参与基于软拒绝机制的分支推测解码方案设计，围绕草稿生成、token 采样、KV Cache 复用等环节进行实验验证与论文撰写。</li>
+            <li>设计不同草稿长度、采样设置与模型配置下的消融对比实验，分析 Token 接受率、推理耗时与生成质量之间的变化关系，为方法有效性和适用场景提供实验支撑。</li>
+            <li>构建推理速度、Token 接受率与生成质量等指标的对比实验，方案在不同模型设置下取得约 1.41-3.31x 端到端推理加速，并保持输出质量稳定；目前有 1 篇 EMNLP 论文在投。</li>
           </ul>
         </article>
 
         <article class="resume-card">
           <div class="resume-item__head">
-            <strong>水质监测系统开发</strong>
-            <span>2025 - 2026</span>
+            <strong>基于 GSM8K 的多模型 LoRA SFT 与偏好对齐实验</strong>
+            <span>2025.01 - 2025.03</span>
           </div>
+          <p class="resume-tech">LLaMA-Factory · TRL · PEFT · LoRA · DPO · GRPO</p>
           <ul>
-            <li>基于历史水质指标构建预测方案，并接入 LLM + RAG 对异常水质情况生成分析报告与处理建议，辅助业务决策。</li>
-            <li>围绕业务场景完成数据整理、预测逻辑构建与异常分析流程设计，提升系统的可解释性与使用价值。</li>
-          </ul>
-        </article>
-
-        <article class="resume-card">
-          <div class="resume-item__head">
-            <strong>非侵入式负荷识别（NILM）</strong>
-            <span>2021 - 2023</span>
-          </div>
-          <ul>
-            <li>完成负荷识别模型复现、训练与调优，负责开源数据集清洗和预处理；相关论文发表于 CSCWD（CCF-C 类会议）。</li>
-            <li>面向家庭用电场景，基于总电表数据识别电器使用情况，参与从数据准备到模型推理的完整算法流程。</li>
-          </ul>
-        </article>
-
-        <article class="resume-card">
-          <div class="resume-item__head">
-            <strong>基于深度学习的说话人识别</strong>
-            <span>2022 - 2023</span>
-          </div>
-          <ul>
-            <li>基于 ECAPA-TDNN 开展说话人识别 / 验证任务研究，完成模型训练、调优与结构改进。</li>
-            <li>完成语音数据预处理与梅尔频谱特征提取，支撑声纹向量建模与实验分析。</li>
+            <li>面向数学推理任务中指令格式、解题过程与最终答案输出不稳定的问题，基于 LLaMA-Factory 搭建可复用的 LoRA SFT 流程，将 GSM8K 清洗并整理为数学推理指令样例。</li>
+            <li>围绕 LLaMA3 / Qwen2.5 系列模型设计统一训练配置与评测模板，支持从小参数模型到 7B / 8B 模型的横向对比，分析模型规模、指令微调状态对 SFT 效果的影响。</li>
+            <li>基于 TRL 在 SFT checkpoint 上进行 DPO 与 GRPO 微调，构造 chosen-rejected 偏好样例并设计答案正确性 / 格式奖励函数，形成覆盖 SFT、偏好数据构造与偏好对齐的完整实验流程。</li>
           </ul>
         </article>
       </section>
@@ -849,12 +865,24 @@
 
         <article class="resume-card">
           <div class="resume-item__head">
-            <strong>上海诺基亚贝尔股份有限公司 · AI 应用开发实习生（杭州）</strong>
+            <strong>Philips · Agent 开发实习生（苏州）</strong>
+            <span>2026.03 - 2026.05</span>
+          </div>
+          <p class="resume-tech">LangChain / LangGraph · Agent · vLLM · RAG · Ollama · Workflow · Docker · FastAPI</p>
+          <ul>
+            <li>面向企业自然语言问数中表结构召回、SQL 校验与结果解释链路分散的问题，基于 LangGraph 编排 RAG 表结构检索、Text2SQL、SQL 校验重试、代码执行与结果解释节点。</li>
+            <li>针对表结构召回不足的问题，补充表字段、业务样例与指标口径描述，优化 RAG 召回方法，将数据表召回率从 61.4% 提升至 81.6%。</li>
+            <li>编写自动测试脚本输出召回率、节点耗时与端到端响应时间等指标，定位主要耗时节点后调整工作流编排和代码执行流程，将业务响应时间从 50s 降至 30s。</li>
+          </ul>
+        </article>
+
+        <article class="resume-card">
+          <div class="resume-item__head">
+            <strong>上海诺基亚贝尔股份有限公司 · 后端开发 / 数据清洗实习生（杭州）</strong>
             <span>2023.09 - 2024.01</span>
           </div>
           <ul>
-            <li>参与 AIGC 项目，面向 Robot Framework 场景构建基于 LLM 的代码生成服务；负责 Vue3 前端、Flask 接口、Nginx 反向代理与 Docker 部署，并完成 Python 数据抽取、清洗和格式转换。</li>
-            <li>参与应用侧功能联调与部署落地，覆盖数据处理、接口开发到服务上线的完整流程。</li>
+            <li>面向 Robot Framework 自动化测试脚本生成的模型微调需求，负责后端接口实现与训练数据准备；对原有 Robot Framework 自动化测试代码进行清洗、解析与样例提取，完成格式规范化和微调训练数据构造。</li>
           </ul>
         </article>
       </section>
