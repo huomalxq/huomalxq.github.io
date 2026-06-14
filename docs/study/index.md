@@ -47,13 +47,13 @@ title: 学习记录
     <span class="study-card__label">LLM Systems</span>
     <strong>大模型数据格式与混合精度</strong>
     <span>Datawhale LLM-Algo-LeetCode Part 01 / Section 01，总结 FP32、FP16、BF16、TF32、FP8 的显存占用、数值范围、训练稳定性和硬件演进。</span>
-    <em class="study-card__meta">01 Hardware, Math and Systems / 01 Data Types and Precision</em>
+    <em class="study-card__meta">Part 01 硬件、数学与系统 / Section 01 数据格式与混合精度</em>
   </a>
   <a class="study-card" href="llm-algo-leetcode/llm-gpu-architecture-and-memory/">
     <span class="study-card__label">LLM Systems</span>
     <strong>GPU 架构与内存层级</strong>
     <span>Datawhale LLM-Algo-LeetCode Part 01 / Section 03，梳理 Tensor Core、CUDA Core、HBM、SRAM、FlashAttention 与多卡互连的核心关系。</span>
-    <em class="study-card__meta">01 Hardware, Math and Systems / 03 GPU Architecture and Memory</em>
+    <em class="study-card__meta">Part 01 硬件、数学与系统 / Section 03 GPU 架构与内存层级</em>
   </a>
 </section>
 

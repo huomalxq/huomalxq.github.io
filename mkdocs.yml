@@ -35,6 +35,6 @@ nav:
       - Teco-RAG 项目总结: study/teco-rag-project-summary.md
       - GSM8K 后训练实验复盘: study/gsm8k-post-training-experiments.md
       - Datawhale LLM-Algo-LeetCode:
-          - Part 01 Hardware, Math and Systems:
-              - 01 Data Types and Precision: study/llm-algo-leetcode/llm-data-types-and-precision.md
-              - 03 GPU Architecture and Memory: study/llm-algo-leetcode/llm-gpu-architecture-and-memory.md
+          - Part 01 硬件、数学与系统:
+              - 01 数据格式与混合精度: study/llm-algo-leetcode/llm-data-types-and-precision.md
+              - 03 GPU 架构与内存层级: study/llm-algo-leetcode/llm-gpu-architecture-and-memory.md

@@ -4,8 +4,8 @@
 
 | 标记 | 内容 |
 | --- | --- |
-| Part | 01 Hardware, Math and Systems |
-| Section | 01 Data Types and Precision |
+| Part | 01 硬件、数学与系统 |
+| Section | 01 数据格式与混合精度 |
 | 本文主题 | 大模型数据格式与混合精度 |
 
 ## 核心结论

@@ -4,8 +4,8 @@
 
 | 标记 | 内容 |
 | --- | --- |
-| Part | 01 Hardware, Math and Systems |
-| Section | 03 GPU Architecture and Memory |
+| Part | 01 硬件、数学与系统 |
+| Section | 03 GPU 架构与内存层级 |
 | 本文主题 | GPU 物理架构、内存层级与核心硬件单元 |
 
 ## 核心结论
