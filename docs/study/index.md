@@ -19,8 +19,8 @@ title: 学习记录
 
   <article class="study-hero__card">
     <span class="hero-panel__eyebrow">Current Notes</span>
-    <strong>两篇项目复盘</strong>
-    <p>当前保留数据分析 Agent 与开放原子大赛 Teco-RAG 两篇记录，去掉原来的分类层级。</p>
+    <strong>项目复盘与基础笔记</strong>
+    <p>当前保留数据分析 Agent、开放原子大赛 Teco-RAG、GSM8K 后训练实验与大模型系统基础五篇记录，去掉原来的分类层级。</p>
   </article>
 </section>
 
@@ -36,6 +36,24 @@ title: 学习记录
     <strong>开放原子大赛 Teco-RAG</strong>
     <span>整理 RAG baseline、文档切分、Embedding/Rerank 选型、多查询、HyDE、BM25 和参数调优。</span>
     <em class="study-card__meta">Milvus / bge / Rerank / Qwen / BM25</em>
+  </a>
+  <a class="study-card" href="gsm8k-post-training-experiments/">
+    <span class="study-card__label">LLM Training</span>
+    <strong>GSM8K 后训练实验复盘</strong>
+    <span>整理 Qwen2.5-1.5B 的 LoRA SFT、DPO、GRPO 主线实验、关键指标和面试表达。</span>
+    <em class="study-card__meta">GSM8K / LoRA SFT / DPO / GRPO / Qwen2.5</em>
+  </a>
+  <a class="study-card" href="llm-data-types-and-precision/">
+    <span class="study-card__label">LLM Systems</span>
+    <strong>大模型数据格式与混合精度</strong>
+    <span>总结 FP32、FP16、BF16、TF32、FP8 的显存占用、数值范围、训练稳定性和硬件演进。</span>
+    <em class="study-card__meta">FP16 / BF16 / AMP / A100 / H100</em>
+  </a>
+  <a class="study-card" href="llm-gpu-architecture-and-memory/">
+    <span class="study-card__label">LLM Systems</span>
+    <strong>GPU 架构与内存层级</strong>
+    <span>梳理 Tensor Core、CUDA Core、HBM、SRAM、FlashAttention 与多卡互连的核心关系。</span>
+    <em class="study-card__meta">Tensor Core / HBM / SRAM / NVLink</em>
   </a>
 </section>
 
@@ -57,6 +75,27 @@ title: 学习记录
         <p>整理 RAG 系统从 baseline 到检索优化的实验过程、关键策略和项目收获。</p>
       </div>
     </article>
+    <article class="feed-item">
+      <time datetime="2026-06-14">项目</time>
+      <div>
+        <strong><a href="gsm8k-post-training-experiments/">GSM8K 后训练实验复盘</a></strong>
+        <p>整理 LoRA SFT、DPO、GRPO 在 GSM8K 上的主线结果、关键参数和方法选择。</p>
+      </div>
+    </article>
+    <article class="feed-item">
+      <time datetime="2026-06-14">学习</time>
+      <div>
+        <strong><a href="llm-data-types-and-precision/">大模型数据格式与混合精度知识点总结</a></strong>
+        <p>梳理大模型训练和推理中常见数据格式、BF16 训练优势、FP32 主权重、A100/ H100 精度能力。</p>
+      </div>
+    </article>
+    <article class="feed-item">
+      <time datetime="2026-06-14">学习</time>
+      <div>
+        <strong><a href="llm-gpu-architecture-and-memory/">GPU 物理架构、内存层级与核心硬件单元总结</a></strong>
+        <p>总结 GPU 架构演进、Tensor Core、Memory Bound、FlashAttention 的 SRAM 优化和节点内通信。</p>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -65,6 +104,27 @@ title: 学习记录
     <p class="section-kicker">Recent Updates</p>
     <h2>最近更新</h2>
     <div class="feed-list">
+      <article class="feed-item">
+        <time datetime="2026-06-14">2026.06.14</time>
+        <div>
+          <strong>补充 GSM8K 后训练实验复盘</strong>
+          <p>将本地 GSM8K 主线实验报告整理为 LoRA SFT、DPO、GRPO 对比笔记。</p>
+        </div>
+      </article>
+      <article class="feed-item">
+        <time datetime="2026-06-14">2026.06.14</time>
+        <div>
+          <strong>补充 GPU 架构与内存层级笔记</strong>
+          <p>整理 Datawhale 页面中的 Tensor Core、GPU 内存层级、FlashAttention 与多卡互连知识点。</p>
+        </div>
+      </article>
+      <article class="feed-item">
+        <time datetime="2026-06-14">2026.06.14</time>
+        <div>
+          <strong>补充大模型数据格式与混合精度笔记</strong>
+          <p>整理 Datawhale 页面中的 FP16、BF16、TF32、FP8 与混合精度训练知识点。</p>
+        </div>
+      </article>
       <article class="feed-item">
         <time datetime="2026-06-14">2026.06.14</time>
         <div>
