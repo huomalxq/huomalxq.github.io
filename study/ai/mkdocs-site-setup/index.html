@@ -6,14 +6,14 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="林祥庆的个人主页、AI 简历与学习记录">
+        <meta name="description" content="林祥庆的 LLM 系统、Agent 工程与学习记录主页">
       
       
       
         <link rel="canonical" href="https://huomalxq.github.io/study/ai/mkdocs-site-setup/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../agent-assisted-writing/">
       
       
         <link rel="next" href="../../engineering/">
@@ -456,6 +456,8 @@
       
         
       
+        
+      
     
     
     
@@ -506,6 +508,34 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../agent-assisted-writing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    AI 辅助整理学习记录
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -618,6 +648,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布检查清单
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -646,6 +687,10 @@
       
         
           
+        
+      
+        
+      
         
       
         
@@ -700,6 +745,62 @@
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/git-repository-workflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git 仓库维护流程
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../engineering/mkdocs-navigation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MkDocs 导航维护
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
               
             
               
@@ -815,6 +916,17 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        发布检查清单
+      
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -839,9 +951,9 @@
 <h2 id="_1">目标</h2>
 <p>为 <code>huomalxq.github.io</code> 搭一个结构清晰、后续容易维护的个人站点：</p>
 <ul>
-<li>首页只保留两个核心入口。</li>
-<li>简历页直接承载 PDF。</li>
-<li>学习记录按主题分类，适合长期追加。</li>
+<li>首页负责快速说明个人方向和核心入口。</li>
+<li>简历页承载结构化网页简历，并保留 PDF 下载入口。</li>
+<li>学习记录按主题分类，方便后续持续追加实验、复盘和工程笔记。</li>
 </ul>
 <h2 id="_2">当前结构</h2>
 <pre><code class="language-text">docs/
@@ -862,15 +974,24 @@
 </code></pre>
 <h2 id="_3">为什么这样组织</h2>
 <ol>
-<li><code>MkDocs</code> 很适合做持续增长的学习记录，而不是一次性静态页面。</li>
-<li>首页只做导航，不承担过多内容，后续扩展不会破坏结构。</li>
-<li>简历 PDF 和学习笔记都纳入同一个发布流程，维护成本更低。</li>
+<li><code>MkDocs</code> 适合持续增长的学习记录，比手写多个静态 HTML 页面更容易维护。</li>
+<li><code>docs/</code> 只放内容源文件，构建产物由命令或 GitHub Actions 生成，职责更清楚。</li>
+<li>首页、简历和学习记录共享同一套样式与发布流程，后续维护成本更低。</li>
+<li>分类页只负责组织主题，具体经验放进独立笔记，避免页面越写越散。</li>
 </ol>
 <h2 id="_4">后续维护建议</h2>
 <ul>
-<li>新增学习记录时，优先放到已有分类下。</li>
-<li>如果某个主题笔记变多，再单独拆一个新分类。</li>
+<li>新增学习记录时，先判断它属于 <code>AI / Agent</code> 还是 <code>工程实践</code>。</li>
+<li>如果某个主题超过 3-5 篇笔记，再单独拆出新的分类。</li>
 <li>每次新增页面后，同步更新 <code>mkdocs.yml</code> 的导航。</li>
+<li>笔记标题优先写具体对象和动作，例如“LangGraph Text2SQL 校验重试设计”。</li>
+</ul>
+<h2 id="_5">发布检查清单</h2>
+<ul>
+<li><code>mkdocs.yml</code> 中的导航是否包含新页面。</li>
+<li>页面内相对链接是否能从构建后的路径访问。</li>
+<li>静态资源是否放在 <code>docs/assets/</code> 下。</li>
+<li>构建前确认临时目录不会被提交，例如 <code>.mkdocs-out/</code> 已加入 <code>.gitignore</code>。</li>
 </ul>
 
 
