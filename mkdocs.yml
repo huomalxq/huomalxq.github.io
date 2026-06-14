@@ -31,5 +31,5 @@ nav:
       - 简历总览: resume/index.md
   - 学习记录:
       - 学习总览: study/index.md
-      - Eagle Eye 数据分析 Agent: study/eagle-eye-data-agent.md
+      - 数据分析 Agent 后端项目: study/data-analysis-agent.md
       - Teco-RAG 项目总结: study/teco-rag-project-summary.md
