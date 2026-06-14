@@ -158,22 +158,22 @@ title: 个人简历
           </div>
           <p class="resume-tech">PyTorch · Transformers · Speculative Decoding · KV Cache</p>
           <ul>
-            <li>面向长草稿推测解码中无效计算较多、收益波动明显的问题，参与软拒绝机制与分支推测解码方案设计，覆盖草稿生成、token 采样和 KV Cache 复用等关键环节。</li>
-            <li>设计草稿长度、采样设置和模型配置的消融实验，持续跟踪 Token 接受率、推理耗时和生成质量，支撑方法有效性与适用场景分析。</li>
-            <li>搭建推理速度、Token 接受率和生成质量的对比评测，方案在不同模型设置下取得约 1.41-3.31x 端到端推理加速，并保持输出质量稳定；目前有 1 篇 EMNLP 论文在投。</li>
+            <li>针对长草稿推测解码中无效计算较多、加速收益不稳定的问题，参与基于软拒绝机制的分支推测解码方案设计，围绕草稿生成、token 采样、KV Cache 复用等环节进行实验验证与论文撰写。</li>
+            <li>设计不同草稿长度、采样设置与模型配置下的消融对比实验，分析 Token 接受率、推理耗时与生成质量之间的变化关系，为方法有效性和适用场景提供实验支撑。</li>
+            <li>构建推理速度、Token 接受率与生成质量等指标的对比实验，方案在不同模型设置下取得约 1.41-3.31x 端到端推理加速，并保持输出质量稳定；目前有 1 篇 EMNLP 论文在投。</li>
           </ul>
         </article>
 
         <article class="resume-card">
           <div class="resume-item__head">
-            <strong>基于 GSM8K 的多模型 LoRA SFT 与偏好对齐实验</strong>
+            <strong>基于 GSM8K 的大模型 LoRA SFT 与偏好对齐实验</strong>
             <span>2025.01 - 2025.03</span>
           </div>
           <p class="resume-tech">LLaMA-Factory · TRL · PEFT · LoRA · DPO · GRPO</p>
           <ul>
-            <li>针对数学推理任务中指令格式、推理过程和最终答案输出不稳定的问题，基于 LLaMA-Factory 搭建可复用 LoRA SFT 流程，并将 GSM8K 清洗为指令样例。</li>
-            <li>为 LLaMA3 / Qwen2.5 系列模型设计统一训练配置和评测模板，支持小参数模型到 7B / 8B 模型的横向对比，分析模型规模与指令微调状态对效果的影响。</li>
-            <li>基于 TRL 在 SFT checkpoint 上继续做 DPO 与 GRPO 微调，构造 chosen-rejected 偏好样例，并设计答案正确性 / 格式奖励函数，形成从 SFT 到偏好对齐的完整实验链路。</li>
+            <li>面向数学推理任务中指令格式、解题过程与最终答案输出不稳定的问题，基于 LLaMA-Factory 搭建可复用的 LoRA SFT 流程，将 GSM8K 清洗并整理为数学推理指令样例。</li>
+            <li>围绕 LLaMA3 / Qwen2.5 系列模型设计统一训练配置与评测模板，支持从小参数模型到 7B / 8B 模型的横向对比，分析模型规模、指令微调状态对 SFT 效果的影响。</li>
+            <li>基于 TRL 在 SFT checkpoint 上进行 DPO 与 GRPO 微调，构造 chosen-rejected 偏好样例并设计答案正确性 / 格式奖励函数，形成覆盖 SFT、偏好数据构造与偏好对齐的完整实验流程。</li>
           </ul>
         </article>
       </section>
@@ -189,9 +189,9 @@ title: 个人简历
           </div>
           <p class="resume-tech">LangChain / LangGraph · Agent · vLLM · RAG · Ollama · Workflow · Docker · FastAPI</p>
           <ul>
-            <li>面向企业自然语言问数中表结构召回、SQL 校验和结果解释链路分散的问题，使用 LangGraph 编排表结构 RAG、Text2SQL、SQL 校验重试、代码执行和结果解释节点。</li>
-            <li>针对表结构召回不足，补充表字段含义、业务样例与指标口径描述，优化 RAG 召回方法，将数据表召回率从 61.4% 提升至 81.6%。</li>
-            <li>编写自动测试脚本输出召回率、节点耗时和端到端响应时间等指标，定位主要耗时节点后调整工作流编排与代码执行流程，将业务响应时间从 50s 降至 30s。</li>
+            <li>面向企业自然语言问数中表结构召回、SQL 校验与结果解释链路分散的问题，基于 LangGraph 编排 RAG 表结构检索、Text2SQL、SQL 校验重试、代码执行与结果解释节点。</li>
+            <li>针对表结构召回不足的问题，补充表字段、业务样例与指标口径描述，优化 RAG 召回方法，将数据表召回率从 61.4% 提升至 81.6%。</li>
+            <li>编写自动测试脚本输出召回率、节点耗时与端到端响应时间等指标，定位主要耗时节点后调整工作流编排和代码执行流程，将业务响应时间从 50s 降至 30s。</li>
           </ul>
         </article>
 
@@ -201,7 +201,7 @@ title: 个人简历
             <span>2023.09 - 2024.01</span>
           </div>
           <ul>
-            <li>面向 Robot Framework 自动化测试脚本生成的模型微调需求，负责后端接口实现与训练数据准备；清洗、解析原有自动化测试代码并抽取样例，完成格式规范化和微调训练数据构造。</li>
+            <li>面向 Robot Framework 自动化测试脚本生成的模型微调需求，负责后端接口实现与训练数据准备；对原有 Robot Framework 自动化测试代码进行清洗、解析与样例提取，完成格式规范化和微调训练数据构造。</li>
           </ul>
         </article>
       </section>
