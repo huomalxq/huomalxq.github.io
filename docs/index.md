@@ -63,11 +63,11 @@ title: 首页
   <a class="portal-card portal-card--warm" href="study/">
     <p class="section-kicker">Knowledge Base</p>
     <h2>学习记录</h2>
-    <p>沉淀 AI / Agent 实验、工程实践和站点维护过程，把临时经验变成可回溯的技术笔记。</p>
+    <p>整理 Eagle Eye 数据分析 Agent 与 Teco-RAG 两个项目复盘，把本地材料变成可回溯的技术记录。</p>
     <div class="portal-tags">
-      <span>AI / Agent</span>
-      <span>Engineering</span>
-      <span>Notes</span>
+      <span>Eagle Eye</span>
+      <span>Teco-RAG</span>
+      <span>Project Notes</span>
     </div>
   </a>
 </section>
