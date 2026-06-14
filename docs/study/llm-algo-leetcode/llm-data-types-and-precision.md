@@ -2,6 +2,12 @@
 
 来源：[Datawhale LLM-Algo-LeetCode：Data Types and Precision](https://datawhalechina.github.io/llm-algo-leetcode/01_Hardware_Math_and_Systems/01_Data_Types_and_Precision.html)
 
+| 标记 | 内容 |
+| --- | --- |
+| Part | 01 Hardware, Math and Systems |
+| Section | 01 Data Types and Precision |
+| 本文主题 | 大模型数据格式与混合精度 |
+
 ## 核心结论
 
 大模型里的数据格式选择，本质是在 **显存占用、数值范围、表示精度、硬件吞吐** 之间取平衡。

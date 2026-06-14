@@ -2,6 +2,12 @@
 
 来源：[Datawhale LLM-Algo-LeetCode：GPU Architecture and Memory](https://datawhalechina.github.io/llm-algo-leetcode/01_Hardware_Math_and_Systems/03_GPU_Architecture_and_Memory.html)
 
+| 标记 | 内容 |
+| --- | --- |
+| Part | 01 Hardware, Math and Systems |
+| Section | 03 GPU Architecture and Memory |
+| 本文主题 | GPU 物理架构、内存层级与核心硬件单元 |
+
 ## 核心结论
 
 大模型计算性能不只取决于算力峰值，还取决于数据能不能足够快地喂给计算单元。Transformer 中的 GEMM、Attention、MLP 等计算既可能受算力限制，也可能受显存带宽限制。

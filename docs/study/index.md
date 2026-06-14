@@ -46,14 +46,14 @@ title: 学习记录
   <a class="study-card" href="llm-algo-leetcode/llm-data-types-and-precision/">
     <span class="study-card__label">LLM Systems</span>
     <strong>大模型数据格式与混合精度</strong>
-    <span>总结 FP32、FP16、BF16、TF32、FP8 的显存占用、数值范围、训练稳定性和硬件演进。</span>
-    <em class="study-card__meta">FP16 / BF16 / AMP / A100 / H100</em>
+    <span>Datawhale LLM-Algo-LeetCode Part 01 / Section 01，总结 FP32、FP16、BF16、TF32、FP8 的显存占用、数值范围、训练稳定性和硬件演进。</span>
+    <em class="study-card__meta">01 Hardware, Math and Systems / 01 Data Types and Precision</em>
   </a>
   <a class="study-card" href="llm-algo-leetcode/llm-gpu-architecture-and-memory/">
     <span class="study-card__label">LLM Systems</span>
     <strong>GPU 架构与内存层级</strong>
-    <span>梳理 Tensor Core、CUDA Core、HBM、SRAM、FlashAttention 与多卡互连的核心关系。</span>
-    <em class="study-card__meta">Tensor Core / HBM / SRAM / NVLink</em>
+    <span>Datawhale LLM-Algo-LeetCode Part 01 / Section 03，梳理 Tensor Core、CUDA Core、HBM、SRAM、FlashAttention 与多卡互连的核心关系。</span>
+    <em class="study-card__meta">01 Hardware, Math and Systems / 03 GPU Architecture and Memory</em>
   </a>
 </section>
 
@@ -86,14 +86,14 @@ title: 学习记录
       <time datetime="2026-06-14">学习</time>
       <div>
         <strong><a href="llm-algo-leetcode/llm-data-types-and-precision/">大模型数据格式与混合精度知识点总结</a></strong>
-        <p>梳理大模型训练和推理中常见数据格式、BF16 训练优势、FP32 主权重、A100/ H100 精度能力。</p>
+        <p>Datawhale LLM-Algo-LeetCode Part 01 / Section 01：梳理常见数据格式、BF16 训练优势、FP32 主权重、A100/ H100 精度能力。</p>
       </div>
     </article>
     <article class="feed-item">
       <time datetime="2026-06-14">学习</time>
       <div>
         <strong><a href="llm-algo-leetcode/llm-gpu-architecture-and-memory/">GPU 物理架构、内存层级与核心硬件单元总结</a></strong>
-        <p>总结 GPU 架构演进、Tensor Core、Memory Bound、FlashAttention 的 SRAM 优化和节点内通信。</p>
+        <p>Datawhale LLM-Algo-LeetCode Part 01 / Section 03：总结 GPU 架构演进、Tensor Core、Memory Bound、FlashAttention 的 SRAM 优化和节点内通信。</p>
       </div>
     </article>
   </div>
