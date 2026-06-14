@@ -43,13 +43,13 @@ title: 学习记录
     <span>整理 Qwen2.5-1.5B 的 LoRA SFT、DPO、GRPO 主线实验、关键指标和面试表达。</span>
     <em class="study-card__meta">GSM8K / LoRA SFT / DPO / GRPO / Qwen2.5</em>
   </a>
-  <a class="study-card" href="llm-data-types-and-precision/">
+  <a class="study-card" href="llm-algo-leetcode/llm-data-types-and-precision/">
     <span class="study-card__label">LLM Systems</span>
     <strong>大模型数据格式与混合精度</strong>
     <span>总结 FP32、FP16、BF16、TF32、FP8 的显存占用、数值范围、训练稳定性和硬件演进。</span>
     <em class="study-card__meta">FP16 / BF16 / AMP / A100 / H100</em>
   </a>
-  <a class="study-card" href="llm-gpu-architecture-and-memory/">
+  <a class="study-card" href="llm-algo-leetcode/llm-gpu-architecture-and-memory/">
     <span class="study-card__label">LLM Systems</span>
     <strong>GPU 架构与内存层级</strong>
     <span>梳理 Tensor Core、CUDA Core、HBM、SRAM、FlashAttention 与多卡互连的核心关系。</span>
@@ -85,14 +85,14 @@ title: 学习记录
     <article class="feed-item">
       <time datetime="2026-06-14">学习</time>
       <div>
-        <strong><a href="llm-data-types-and-precision/">大模型数据格式与混合精度知识点总结</a></strong>
+        <strong><a href="llm-algo-leetcode/llm-data-types-and-precision/">大模型数据格式与混合精度知识点总结</a></strong>
         <p>梳理大模型训练和推理中常见数据格式、BF16 训练优势、FP32 主权重、A100/ H100 精度能力。</p>
       </div>
     </article>
     <article class="feed-item">
       <time datetime="2026-06-14">学习</time>
       <div>
-        <strong><a href="llm-gpu-architecture-and-memory/">GPU 物理架构、内存层级与核心硬件单元总结</a></strong>
+        <strong><a href="llm-algo-leetcode/llm-gpu-architecture-and-memory/">GPU 物理架构、内存层级与核心硬件单元总结</a></strong>
         <p>总结 GPU 架构演进、Tensor Core、Memory Bound、FlashAttention 的 SRAM 优化和节点内通信。</p>
       </div>
     </article>

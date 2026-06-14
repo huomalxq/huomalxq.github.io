@@ -34,5 +34,6 @@ nav:
       - 数据分析 Agent 后端项目: study/data-analysis-agent.md
       - Teco-RAG 项目总结: study/teco-rag-project-summary.md
       - GSM8K 后训练实验复盘: study/gsm8k-post-training-experiments.md
-      - 大模型数据格式与混合精度: study/llm-data-types-and-precision.md
-      - GPU 架构与内存层级: study/llm-gpu-architecture-and-memory.md
+      - Datawhale LLM-Algo-LeetCode:
+          - 大模型数据格式与混合精度: study/llm-algo-leetcode/llm-data-types-and-precision.md
+          - GPU 架构与内存层级: study/llm-algo-leetcode/llm-gpu-architecture-and-memory.md
