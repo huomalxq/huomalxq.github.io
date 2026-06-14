@@ -33,7 +33,10 @@ nav:
       - 学习总览: study/index.md
       - AI / Agent:
           - 分类说明: study/ai/index.md
+          - AI 辅助整理学习记录: study/ai/agent-assisted-writing.md
           - MkDocs 站点搭建: study/ai/mkdocs-site-setup.md
       - 工程实践:
           - 分类说明: study/engineering/index.md
+          - Git 仓库维护流程: study/engineering/git-repository-workflow.md
+          - MkDocs 导航维护: study/engineering/mkdocs-navigation.md
           - 学习记录模板: study/engineering/note-template.md

@@ -4,6 +4,8 @@
 
 ## 当前内容
 
+- [Git 仓库维护流程](git-repository-workflow.md): 记录新增学习笔记时的 Git 与构建检查流程。
+- [MkDocs 导航维护](mkdocs-navigation.md): 记录新增页面后如何同步维护站点导航。
 - [学习记录模板](note-template.md): 适合作为后续每篇技术笔记的起始格式。
 
 ## 记录范围

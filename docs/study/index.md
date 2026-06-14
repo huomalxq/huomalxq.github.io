@@ -45,6 +45,13 @@ title: 学习记录
     <h2>最近更新</h2>
     <div class="feed-list">
       <article class="feed-item">
+        <time datetime="2026-06-14">2026.06.14</time>
+        <div>
+          <strong>补充学习记录写作与仓库维护笔记</strong>
+          <p>新增 AI 辅助整理、Git 仓库维护流程和 MkDocs 导航维护三篇记录，让后续更新更容易延续统一格式。</p>
+        </div>
+      </article>
+      <article class="feed-item">
         <time datetime="2026-06-08">2026.06.08</time>
         <div>
           <strong>同步新版简历与主页定位</strong>

@@ -4,6 +4,7 @@
 
 ## 当前笔记
 
+- [AI 辅助整理学习记录](agent-assisted-writing.md): 记录如何让 AI 参与学习过程的整理和复盘。
 - [MkDocs 站点搭建](mkdocs-site-setup.md): 记录个人主页和学习记录站点的结构设计、目录规划与发布方式。
 
 ## 记录范围
